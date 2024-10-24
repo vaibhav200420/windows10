@@ -9,7 +9,7 @@ services:
     cap_add:
       - NET_ADMIN
     ports:
-      - 1024:1024
+      - 8006:8006
       - 3369:3369/tcp
       - 3329:3329/udp
     stop_grace_period: 2m
