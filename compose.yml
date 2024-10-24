@@ -3,13 +3,13 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "win11"
+      VERSION: "win10"
     devices:
       - /dev/kvm
     cap_add:
       - NET_ADMIN
     ports:
-      - 8010:8010
+      - 1024:1024
       - 3369:3369/tcp
       - 3329:3329/udp
     stop_grace_period: 2m
