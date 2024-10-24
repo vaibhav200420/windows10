@@ -34,7 +34,7 @@ ADD --chmod=664 https://github.com/qemus/virtiso-whql/releases/download/v1.9.43-
 FROM dockurr/windows-arm:2.20 AS build-arm64
 FROM build-${TARGETARCH}
 
-EXPOSE 8006 3389
+EXPOSE 8010 3369
 VOLUME /storage
 
 ENV RAM_SIZE="8G"
