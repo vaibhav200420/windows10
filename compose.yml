@@ -3,7 +3,11 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "win11"
+      VERSION: "win10"
+      REGION: "en-US"
+      KEYBOARD: "en-US"
+    volume:
+      - /var/win10:/storage 
     devices:
       - /dev/kvm
     cap_add:
@@ -13,3 +17,7 @@ services:
       - 3389:3389/tcp
       - 3389:3389/udp
     stop_grace_period: 2m
+    restart: on-failure
+    RAM-SIZE: "8G"
+    CPU_CORES: "8"
+    DISK_SIZE: "300G"
