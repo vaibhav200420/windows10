@@ -4,6 +4,12 @@ services:
     container_name: windows
     environment:
       VERSION: "win10"
+    volumes:
+      -  /mnt/sdb:/data
+    evironment:
+      RAM_SIZE: "12"
+      CPU_CORES: "4"
+      DISK_SIZE: "500G"
     devices:
       - /dev/kvm
     cap_add:
