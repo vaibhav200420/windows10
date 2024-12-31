@@ -3,14 +3,10 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "win10"
-      RAM_SIZE: "12"
-      CPU_CORES: "4"
-      DISK_SIZE: "500G"
-    volumes:
-      - /mnt/sdb:/data
+      VERSION: "tiny10"
     devices:
       - /dev/kvm
+      - /dev/net/tun
     cap_add:
       - NET_ADMIN
     ports:
