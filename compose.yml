@@ -2,14 +2,14 @@ services:
   windows:
     image: dockurr/windows
     container_name: windows
-    volume:
-       - /mnt/sdb:/data
+    volumes:
+      - /mnt/sdb:/data
     environment:
       VERSION: "win10"
       RAM_SIZE: "12G"
       CPU_CORES: "4"
       DISK_SIZE: "500G"
-     devices:
+    devices:
       - /dev/kvm
       - /dev/net/tun
     cap_add:
