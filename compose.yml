@@ -3,7 +3,7 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "tiny10"
+      VERSION: "https://dn790006.ca.archive.org/0/items/tiny-10-23-h2/tiny10%20x64%2023h2.iso"
     devices:
       - /dev/kvm
       - /dev/net/tun
