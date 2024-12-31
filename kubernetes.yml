@@ -37,9 +37,9 @@ spec:
         - name: DISK_SIZE
           value: "150G"
       volumeMounts:
-        - mountPath: /mnt
+        - mountPath: /dev/sdb
           name: storage
-        - mountPath: /dev/kvm
+        - mountPath: /dev/sdb/kvm
           name: dev-kvm
   volumes:
     - name: storage
