@@ -39,7 +39,7 @@ VOLUME /storage
 
 ENV RAM_SIZE="12G"
 ENV CPU_CORES="4"
-ENV DISK_SIZE="300G"
+ENV DISK_SIZE="150G"
 ENV VERSION="win10"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
