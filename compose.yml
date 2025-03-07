@@ -6,9 +6,9 @@ services:
       - /mnt/sdb:/data
     environment:
       VERSION: "win10"
-      RAM_SIZE: "12G"
-      CPU_CORES: "4"
-      DISK_SIZE: "500G"
+      RAM_SIZE: "28G"
+      CPU_CORES: "8"
+      DISK_SIZE: "150G"
     devices:
       - /dev/kvm
       - /dev/net/tun
