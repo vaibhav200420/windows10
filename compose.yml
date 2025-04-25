@@ -5,7 +5,7 @@ services:
     volumes:
       - /mnt/sdb:/data
     environment:
-      VERSION: "win10"
+      VERSION: "2022"
       RAM_SIZE: "8G"
       CPU_CORES: "4"
       DISK_SIZE: "150G"
